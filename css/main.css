@@ -5,16 +5,35 @@ body {
    background: #002b36;
 }
 
-.nav {
-   display: flex;
-   justify-content: space-between;   
-   align-items: center;              
-   width: 100%;
+.top_bar {
    background: #073642;
+   position: fixed;
+   display: flex;
+   width: 100%;
+   top: 0; 
    height: 3rem;
    overflow: hidden;
-   position: fixed;
-   top: 0; 
+}
+
+.name_plate {
+   display: flex;
+   width: 50%;  
+   align-items: center;
+}
+
+.name_plate p {
+   font-family: Arial, Helvetica, sans-serif;
+   color: white;
+   font-size: 1.5rem;
+   font-weight: bold;
+
+}
+
+.nav {
+   display: flex;
+   width: 50%;
+   justify-content: space-between;   
+   align-items: center;              
 }
 
 .nav a {
@@ -23,7 +42,6 @@ body {
    text-align: center;
    text-decoration: none;
    font-size: 1.5rem;
-   vertical-align: middle;
 }
 
 .title_bar {
@@ -57,28 +75,45 @@ body {
    position: relative;
    width: 100%;
    height: 18rem;
-   background: #012134;
+   background: #102434;
 }
 
 .abstract_box {
    background: white;
-   border-radius: 2rem;
+
    position: absolute;
+   margin: 4rem;
+   height: calc(100% - 8rem);
+   width: calc(100% - 8rem);
+   box-shadow: 0 0 2rem black;
+}
+
+.abstract_box p {
    margin: 2rem;
-   height: calc(100% - 4rem);
-   width: calc(100% - 4rem);
+   font-size: 1.1rem;
+   text-align: justify;
 }
 
 .left_bottom {
    width: 100%;
    height: 22rem;
-   background: yellow;
+   background-image: url("../images/mexico_pyramid.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center; 
+}
+
+.left_bottom .image {
+   
 }
 
 .right_top {
-   width: 100%;
+   width: %;
    height: 21rem;
-   background: orange;
+   background-image: url("../images/jwst.jpg");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center 45%; 
 }
 
 
@@ -86,5 +121,8 @@ body {
 .right_bottom {
    width: 100%;
    height: 19rem;
-   background: green;
+   background-image: url("../images/hello_world.png");
+   background-size: 100%;
+   background-repeat: no-repeat;
+   background-position: center; 
 }
