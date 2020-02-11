@@ -13,6 +13,7 @@ body {
    top: 0; 
    height: 3rem;
    overflow: hidden;
+   z-index: 1;
 }
 
 .name_plate {
@@ -94,35 +95,43 @@ body {
    text-align: justify;
 }
 
-.left_bottom {
+.grid_block {
+   position: relative;
    width: 100%;
+   overflow: hidden;
+   background-color: white;
+}
+
+.grid_block:hover .image {
+   transition: .5s ease;
+   opacity: 0.9;
+}
+
+.grid_block .image {
+   max-width:100%;
+   position: absolute;
+}
+
+.left_bottom {
    height: 22rem;
-   background-image: url("../images/mexico_pyramid.jpg");
-   background-size: 100%;
-   background-repeat: no-repeat;
-   background-position: center; 
 }
 
 .left_bottom .image {
-   
+   top: -25%;
 }
 
 .right_top {
-   width: %;
    height: 21rem;
-   background-image: url("../images/jwst.jpg");
-   background-size: 100%;
-   background-repeat: no-repeat;
-   background-position: center 45%; 
 }
 
-
+.right_top .image{
+   top: -50%;
+}
 
 .right_bottom {
-   width: 100%;
    height: 19rem;
-   background-image: url("../images/hello_world.png");
-   background-size: 100%;
-   background-repeat: no-repeat;
-   background-position: center; 
+}
+
+.right_bottom .image{
+   width: 100%;
 }
