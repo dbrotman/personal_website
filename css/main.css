@@ -12,6 +12,7 @@ body {
    width: 100%;
    top: 0; 
    height: 3rem;
+
    overflow: hidden;
    z-index: 100;
 }
@@ -20,6 +21,7 @@ body {
    display: flex;
    width: 50%;  
    align-items: center;
+   margin-left: 1rem;
 }
 
 .name_plate p {
@@ -42,6 +44,10 @@ body {
    text-align: center;
    text-decoration: none;
    font-size: 1.5rem;
+}
+
+.hamburger {
+   display: none;
 }
 
 .title_bar {
@@ -92,12 +98,15 @@ body {
    height: calc(100% - 8rem);
    width: calc(100% - 8rem);
    box-shadow: 0 0 2rem black;
+   align-items: center;
+   display: flex;
 }
 
 .abstract_box p {
-   margin: 2rem;
+   margin: 2%;
    font-size: 1.1rem;
    text-align: justify;
+   vertical-align: middle;
 }
 
 .grid_block {
@@ -161,4 +170,39 @@ body {
 
 .right_bottom .image{
    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+ .left_column {
+      width: 100%;
+      float:none;
+   }
+
+   .right_column {
+      width: 100%;
+      float:none;
+   }
+   
+   .nav {
+      padding-right: 1rem;
+   }
+}
+
+@media screen and (max-width: 750px) {
+   .nav {
+      flex-direction: row-reverse;
+      
+   }
+   
+  .nav a {
+    display: none;
+  }
+  .nav a.hamburger {
+    float: right;
+    display: block;
+    text-align: right;
+  }
+  
+ 
+   
 }
