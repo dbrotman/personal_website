@@ -223,10 +223,7 @@ body {
    .right_bottom {
       height: 30%;
    }
-
-}
-
-@media not (pointer: fine) {
+   
    .grid_block .image {
       opacity: 0.9;
    }
@@ -235,4 +232,5 @@ body {
       visibility: visible;
       opacity: 1;
    }
+
 }
