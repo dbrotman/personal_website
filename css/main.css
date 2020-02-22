@@ -220,7 +220,7 @@ body {
    }
 }
 
-@media (hover: none) and (pointer: coarse) {
+@media (hover: none) {
    .grid_block .image {
       opacity: 0.9;
    }
