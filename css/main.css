@@ -157,7 +157,6 @@ body {
 }
 
 .grid_block .image {
-   /*top: -25%;*/
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
@@ -167,11 +166,6 @@ body {
    height: 21rem;
 }
 
-/*
-.right_top .image{
-   top: -50%;
-}
-*/
 .right_bottom {
    height: 19rem;
 }
@@ -220,10 +214,19 @@ body {
   .name_plate {
     width: 90%;
   }
+  
+  .grid_block {
+      height: 33%;
+   }
 }
 
 @media (hover: none) and (pointer: coarse) {
    .grid_block .image {
       opacity: 0.9;
+   }
+   
+   .grid_block h1 {
+      visibility: visible;
+      opacity: 1;
    }
 }
