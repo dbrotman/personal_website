@@ -94,9 +94,8 @@ body {
 .abstract_box {
    background: white;
    position: absolute;
-   margin: 4rem;
-   height: calc(100% - 8rem);
-   width: calc(100% - 8rem);
+   margin: 1.75rem;
+   height: 14.5rem;
    box-shadow: 0 0 2rem black;
    align-items: center;
    display: flex;
@@ -104,7 +103,7 @@ body {
 
 .abstract_box p {
    margin: 2%;
-   font-size: 1.1rem;
+   font-size: 1.05rem;
    text-align: justify;
    vertical-align: middle;
 }
@@ -157,18 +156,22 @@ body {
    height: 22rem;
 }
 
-.left_bottom .image {
-   top: -25%;
+.grid_block .image {
+   /*top: -25%;*/
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 
 .right_top {
    height: 21rem;
 }
 
+/*
 .right_top .image{
    top: -50%;
 }
-
+*/
 .right_bottom {
    height: 19rem;
 }
@@ -191,23 +194,36 @@ body {
    .nav {
       padding-right: 1rem;
    }
+ 
+   
+   .grid_block {
+      height: 35%;
+   }
 }
 
 @media screen and (max-width: 750px) {
    .nav {
+      width: 10%;
       flex-direction: row-reverse;
-      
    }
    
   .nav a {
     display: none;
   }
+  
   .nav a.hamburger {
     float: right;
     display: block;
     text-align: right;
-  }
+  }  
   
- 
-   
+  .name_plate {
+    width: 90%;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+   .grid_block .image {
+      opacity: 0.9;
+   }
 }
