@@ -209,6 +209,7 @@ body {
     float: right;
     display: block;
     text-align: right;
+    margin-right: 1rem;
   }  
   
   .name_plate {
@@ -216,11 +217,16 @@ body {
   }
   
   .grid_block {
-      height: 33%;
+      height: 40%;
    }
+   
+   .right_bottom {
+      height: 30%;
+   }
+
 }
 
-@media (hover: none) {
+@media not (pointer: fine) {
    .grid_block .image {
       opacity: 0.9;
    }
